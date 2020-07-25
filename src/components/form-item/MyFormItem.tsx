@@ -5,7 +5,7 @@ const MyFormItem = () => {
 
   return (
     <View>
-
+      表单项
     </View>
   );
 };

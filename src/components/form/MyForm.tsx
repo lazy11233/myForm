@@ -5,7 +5,7 @@ const MyForm = () => {
 
   return (
     <View>
-
+      表单组件
     </View>
   )
 }
