@@ -16,7 +16,6 @@ const FormPage = () => {
         <MyFormItem
           label="用户名"
           name="name"
-          type="text"
           rules={[{ required: true, message: '用户名不能为空' }]}
         >
           <MyInput name="name" type="text" />
@@ -24,9 +23,8 @@ const FormPage = () => {
         <MyFormItem
           label="邮箱"
           name="mail"
-          type="text"
           rules={[
-            { required: true, message: '用户名不能为空' },
+            { required: true, message: '邮箱不能为空' },
             { type: 'email', message: '邮箱格式不正确' }
           ]}
         >
