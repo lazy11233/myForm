@@ -1,10 +1,41 @@
 import React from 'react';
-import { View } from '@tarojs/components';
+import { Button, View } from '@tarojs/components';
+import MyForm from '../../components/form/MyForm';
+import MyFormItem from '../../components/form-item/MyFormItem';
+import MyInput from '../../components/input/MyInput';
 
 const FormPage = () => {
+  const formData = {
+    name: '',
+    mail: 'xxxx@html.com'
+  };
 
   return (
-    <View>表单</View>
+    <View>
+      <MyForm formData={formData}>
+        <MyFormItem
+          label="用户名"
+          name="name"
+          type="text"
+          rules={[{ required: true, message: '用户名不能为空' }]}
+        >
+          <MyInput name="name" type="text" />
+        </MyFormItem>
+        <MyFormItem
+          label="邮箱"
+          name="mail"
+          type="text"
+          rules={[
+            { required: true, message: '用户名不能为空' },
+            { type: 'email', message: '邮箱格式不正确' }
+          ]}
+        >
+          <MyInput name="name" type="text" />
+        </MyFormItem>
+        <Button type='primary' formType='submit'>提交</Button>
+        <Button type='primary' formType='reset'>重置</Button>
+      </MyForm>
+    </View>
   );
 };
 export default FormPage;

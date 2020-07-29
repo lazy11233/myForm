@@ -35,11 +35,13 @@
   "dependencies": {
     "@babel/runtime": "^7.7.7",
     "@tarojs/components": "3.0.0-rc.6",
+    "@tarojs/react": "3.0.0-rc.6",
     "@tarojs/runtime": "3.0.0-rc.6",
     "@tarojs/taro": "3.0.0-rc.6",
-    "@tarojs/react": "3.0.0-rc.6",
-    "react-dom": "^16.10.0",
-    "react": "^16.10.0"
+    "async-validate": "^1.0.1",
+    "async-validator": "^3.3.0",
+    "react": "^16.10.0",
+    "react-dom": "^16.10.0"
   },
   "devDependencies": {
     "@types/webpack-env": "^1.13.6",
