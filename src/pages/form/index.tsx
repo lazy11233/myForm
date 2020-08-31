@@ -7,7 +7,7 @@ import MyInput from '../../components/input/MyInput';
 const FormPage = () => {
   const formData = {
     name: '',
-    mail: 'xxxx@html.com'
+    mail: ''
   };
 
   return (

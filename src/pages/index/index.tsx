@@ -17,8 +17,8 @@ export default class Index extends Component {
 
   onClick = () => {
     Taro.navigateTo({
-      url: '/pages/form/index'
-    })
+      url: '/pages/drag-view/index'
+    }).then()
   }
 
   render () {
